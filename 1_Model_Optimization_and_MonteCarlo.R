@@ -32,7 +32,7 @@ initial_conditions <- c(
 parameters <- c(
   delta = 0.0004093141,    # Transmission rate of infected individuals
   equis = 0.7,             # Relative transmission for colonized patients
-  alfa = 0.32,             # Antibiotic use rate
+  alfa = 0.064,            # Antibiotic use rate
   epsilon = 0.13,          # Fraction of asymptomatic carriers developing symptoms during hospitalization
   ve = 1/4,                # Progression rate to symptomatic disease
   lambda = 76,             # Admission rate to the hospital
@@ -149,7 +149,7 @@ num_simulations <- 1000
 parameters_list <- list( # List of random variables for simulations. 
   delta = uniform_values(0.1, num_simulations), # Any initial value; delta will be optimized within each simulation.
   equis = uniform_values(0.7, num_simulations),
-  alfa = uniform_values(0.32, num_simulations),
+  alfa = uniform_values(0.064, num_simulations),
   epsilon = uniform_values(0.13, num_simulations),
   ve = uniform_values(1/4, num_simulations),
   lambda = fixed_values(76, num_simulations),
