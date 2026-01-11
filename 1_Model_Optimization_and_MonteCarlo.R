@@ -30,7 +30,7 @@ initial_conditions <- c(
 
 # Model parameters
 parameters <- c(
-  delta = 0.0004093141,    # Transmission rate of infected individuals
+  delta = 0.0007233824,    # Transmission rate of infected individuals
   equis = 0.7,             # Relative transmission for colonized patients
   alfa = 0.064,            # Antibiotic use rate
   epsilon = 0.13,          # Fraction of asymptomatic carriers developing symptoms during hospitalization
